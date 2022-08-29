@@ -1,0 +1,21 @@
+unit TDTOCliente;
+
+interface
+uses
+  IDTOCliente;
+type
+  TDTOClientes = class(TInterfacedObject, IDTOClientes)
+    private
+      function SetNome(Nome: String): IDTOCliente;
+      function SetCPF(CPF: String): IDTOCliente;
+      function SetEndereco(Endereco: String): IDTOCliente;
+    public
+      class function New:  IDTOClientes;
+      constructor Create;
+      Destructor Destroy; Override;
+
+  end;
+
+implementation
+
+end.

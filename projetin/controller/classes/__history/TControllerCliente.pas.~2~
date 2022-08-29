@@ -1,0 +1,21 @@
+unit TControllerCliente;
+
+interface
+uses
+ IController;
+type
+  TControllerClientes = class(TInterfacedObject, IControllerCliente)
+    private
+      procedure ValidarNome(Nome: String);
+      procedure ValidarCPF(CPF: String);
+      procedure ValidarEndereco(Endereco: String);
+      procedure Gravar;
+    public
+      class function New: IControllerCliente;
+      constructor Create;
+      destructor Destroy; override;
+  end;
+
+implementation
+
+end.

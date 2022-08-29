@@ -1,0 +1,12 @@
+unit IController;
+
+interface
+type
+  IControllerCliente = interface
+    ['{C6C2CC56-7372-4C15-98C7-3D4D438E30F8}']
+    procedure Gravar;
+  end;
+
+implementation
+
+end.

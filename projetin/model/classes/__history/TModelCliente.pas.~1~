@@ -1,0 +1,83 @@
+unit TModelCliente;
+
+interface
+uses
+  IModelCliente;
+type
+  TModelCliente = class(TInterfacedObject, IModelClientes)
+    private
+      procedure ValidarNome(Nome: String);
+      procedure ValidarCPF(CPF: String);
+      procedure ValidarEndereco(Endereco: String);
+      procedure Gravar;
+    procedure ValidarSeEnderecoEstaVazio(Endereco: string);
+    procedure ValidarSeTemNomeDigitado(Nome: string);
+    public
+      class function New: IModelClientes;
+      constructor Create;
+      Destructor Destroy; override;
+  end;
+
+implementation
+
+uses
+  System.SysUtils, Vcl.Dialogs;
+
+{ TModelCliente }
+
+constructor TModelCliente.Create;
+begin
+
+end;
+
+destructor TModelCliente.Destroy;
+begin
+
+  inherited;
+end;
+
+procedure TModelCliente.ValidarSeTemNomeDigitado(Nome: string);
+begin
+  if (Nome = EmptyStr) then
+  begin
+    ShowMessage('Para continuar com o cadastro por favor digite um nome.');
+    Abort;
+  end;
+end;
+
+procedure TModelCliente.ValidarSeEnderecoEstaVazio(Endereco: string);
+begin
+  if (Endereco = EmptyStr) then
+  begin
+    ShowMessage('O endereço está vazio!');
+    Abort;
+  end;
+end;
+
+procedure TModelCliente.Gravar;
+begin
+ //
+end;
+
+class function TModelCliente.New: IModelClientes;
+begin
+  Result := (Self.Create);
+end;
+
+procedure TModelCliente.ValidarCPF(CPF: String);
+begin
+
+
+end;
+
+procedure TModelCliente.ValidarEndereco(Endereco: String);
+begin
+  Self.ValidarSeEnderecoEstaVazio(Endereco);
+end;
+
+procedure TModelCliente.ValidarNome(Nome: String);
+begin
+  Self.ValidarSeTemNomeDigitado(Nome);
+end;
+
+end.
