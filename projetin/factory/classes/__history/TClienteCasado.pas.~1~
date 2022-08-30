@@ -1,0 +1,9 @@
+unit TClienteCasado;
+
+interface
+type
+  TClienteCasado = class(TInterfacedObject, )
+
+implementation
+
+end.

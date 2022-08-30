@@ -1,0 +1,30 @@
+unit TClienteCasado;
+
+interface
+uses
+  IClientesFactory;
+type
+  TClientesCasados = class(TInterfacedObject, IClienteFactory)
+    private
+    public
+     function RetornarCaptionLabel: String;
+     class function New: IClienteFactory;
+  end;
+
+implementation
+
+{ TClientesCasados }
+
+{ TClientesCasados }
+
+class function TClientesCasados.New: IClienteFactory;
+begin
+  Result := (Self.Create);
+end;
+
+function TClientesCasados.RetornarCaptionLabel: String;
+begin
+  Result := 'Cliente: Casado';
+end;
+
+end.

@@ -1,0 +1,29 @@
+unit TClienteFactory;
+
+interface
+uses
+ IClientesFactory;
+type
+  TClientesFactory = class(TInterfacedObject, IClienteFactory)
+    private
+      function RetornarCaptionLabel: String;
+      function GetInstancia(Value: Integer): IClienteFactory;
+
+    public
+  end;
+
+implementation
+
+{ TClientesFactory }
+
+function TClientesFactory.GetInstancia(Value: Integer): IClienteFactory;
+begin
+
+end;
+
+function TClientesFactory.RetornarCaptionLabel: String;
+begin
+
+end;
+
+end.

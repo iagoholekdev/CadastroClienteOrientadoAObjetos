@@ -1,0 +1,53 @@
+unit TClienteFactory;
+
+interface
+uses
+ IClientesFactory;
+type
+  TClientesFactory = class(TInterfacedObject, IClienteFactory)
+    private
+    public
+      function GetInstancia(Value: Integer): ICliInstance;
+
+      class function New:  IClienteFactory;
+  end;
+
+implementation
+uses
+  TClienteCasado,
+  TClienteSolteiro,
+  TClientesSeparados,
+  TEnumCliente, 
+  System.SysUtils, 
+  Vcl.Dialogs;
+
+
+{ TClientesFactory }
+
+
+
+{ TClientesFactory }
+
+function TClientesFactory.GetInstancia(Value: Integer): ICliInstance;
+begin
+  try
+  case Value of
+    Ord(TEnumCli.tCCasado):   Result := TClientesCasados.New;
+    Ord(TEnumCli.tCSolteiro): Result := TClientesSolteiros.New;
+    Ord(TEnumCli.TCSeparado): Result := TClienteSeparado.New;
+  end;
+  except
+    On E:Exception do
+      begin
+        ShowMessage('Não existe classe criada no momento para o Item ' + IntToStr(Value));
+      end;
+
+  end;
+end;
+
+class function TClientesFactory.New: IClienteFactory;
+begin
+  Result := Self.Create;
+end;
+
+end.

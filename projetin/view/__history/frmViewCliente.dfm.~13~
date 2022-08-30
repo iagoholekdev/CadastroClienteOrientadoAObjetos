@@ -1,0 +1,95 @@
+object Form4: TForm4
+  Left = 0
+  Top = 0
+  Caption = 'Form4'
+  ClientHeight = 530
+  ClientWidth = 745
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object GroupBox1: TGroupBox
+    Left = 8
+    Top = 56
+    Width = 457
+    Height = 265
+    Caption = 'Dados do cliente'
+    TabOrder = 0
+    object Label1: TLabel
+      Left = 16
+      Top = 22
+      Width = 27
+      Height = 13
+      Caption = 'Nome'
+    end
+    object Label3: TLabel
+      Left = 16
+      Top = 56
+      Width = 19
+      Height = 13
+      Caption = 'CPF'
+    end
+    object Label4: TLabel
+      Left = 3
+      Top = 85
+      Width = 45
+      Height = 13
+      Caption = 'Endere'#231'o'
+    end
+    object labelNome: TEdit
+      Left = 49
+      Top = 19
+      Width = 121
+      Height = 21
+      TabOrder = 0
+      OnExit = labelNomeExit
+    end
+    object labelCPF: TEdit
+      Left = 49
+      Top = 53
+      Width = 121
+      Height = 21
+      TabOrder = 1
+      OnExit = labelCPFExit
+    end
+    object labelEndereco: TEdit
+      Left = 50
+      Top = 82
+      Width = 121
+      Height = 21
+      TabOrder = 2
+      OnExit = labelEnderecoExit
+    end
+    object btnGravar: TButton
+      Left = 3
+      Top = 120
+      Width = 75
+      Height = 25
+      Caption = 'Gravar'
+      TabOrder = 3
+      OnClick = btnGravarClick
+    end
+    object Memo1: TMemo
+      Left = 224
+      Top = 19
+      Width = 185
+      Height = 142
+      TabOrder = 4
+    end
+    object btnLimparMemo: TButton
+      Left = 224
+      Top = 167
+      Width = 75
+      Height = 25
+      Caption = 'Limpar Memo'
+      TabOrder = 5
+      OnClick = btnLimparMemoClick
+    end
+  end
+end

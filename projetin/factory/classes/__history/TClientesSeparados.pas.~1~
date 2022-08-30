@@ -1,0 +1,9 @@
+unit TClientesSeparados;
+
+interface
+type
+  TClienteSeparado
+
+implementation
+
+end.

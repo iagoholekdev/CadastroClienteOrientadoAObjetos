@@ -9,16 +9,20 @@ type
       FCPF: String;
       FNome: String;
       FEndereco: String;
+      FEstadoCivil: Integer;
       function SetNome(Nome: String): IDTOClientes;
       function SetCPF(CPF: String): IDTOClientes;
       function SetEndereco(Endereco: String): IDTOClientes;
+      function SetEstadoCivil(EstadoCivil: Integer): IDTOClientes;
+
     public
-      class function New:  IDTOClientes;
+      class function New: IDTOClientes;
       constructor Create;
       Destructor Destroy; Override;
       function GetNome: String;
       function GetCPF: String;
       function GetEndereco: String;
+      function GetEstadoCivil: Integer;
   end;
 
 implementation
@@ -46,6 +50,11 @@ begin
   Result := FEndereco;
 end;
 
+function TDTOClientes.GetEstadoCivil: Integer;
+begin
+  Result := FEstadoCivil;
+end;
+
 function TDTOClientes.GetNome: String;
 begin
   Result := FNome;
@@ -66,6 +75,12 @@ function TDTOClientes.SetEndereco(Endereco: String): IDTOClientes;
 begin
   Result := Self;
   FEndereco := Endereco;
+end;
+
+function TDTOClientes.SetEstadoCivil(EstadoCivil: Integer): IDTOClientes;
+begin
+  Result := Self;
+  FEstadoCivil := EstadoCivil;
 end;
 
 function TDTOClientes.SetNome(Nome: String): IDTOClientes;

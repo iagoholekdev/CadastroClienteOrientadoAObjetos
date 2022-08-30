@@ -1,0 +1,34 @@
+unit TClienteFactory;
+
+interface
+uses
+ IClientesFactory;
+type
+  TClientesFactory = class(TInterfacedObject, IClienteFactory)
+    private
+    public
+      function GetInstancia(Value: Integer): ICliInstance;
+  end;
+
+implementation
+uses
+  TClienteCasado,
+  TClienteSolteiro;
+
+
+{ TClientesFactory }
+
+
+
+{ TClientesFactory }
+
+function TClientesFactory.GetInstancia(Value: Integer): ICliInstance;
+begin
+  case Value of
+    0: TClientesCasados.New;
+    1: TClientesSolteiros.New;
+    2:
+  end;
+end;
+
+end.

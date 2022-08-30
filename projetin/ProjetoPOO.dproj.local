@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2022/08/28 20:06:59.000.689,=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Unit4.pas</Transaction>
+    <Transaction>2022/08/28 20:17:16.000.840,C:\Users\Asus\Documents\Embarcadero\Studio\Projects\projetin\view\frmViewCliente.pas=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Unit4.pas</Transaction>
+    <Transaction>2022/08/28 20:17:16.000.840,C:\Users\Asus\Documents\Embarcadero\Studio\Projects\projetin\view\frmViewCliente.dfm=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Unit4.dfm</Transaction>
+    <Transaction>2022/08/28 20:17:25.000.303,=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Unit4.pas</Transaction>
+    <Transaction>2022/08/28 20:18:17.000.902,C:\Users\Asus\Documents\Embarcadero\Studio\Projects\projetin\controller\interface\IController.pas=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Unit4.pas</Transaction>
+    <Transaction>2022/08/28 20:18:49.000.437,=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Unit4.pas</Transaction>
+    <Transaction>2022/08/28 20:20:04.000.308,C:\Users\Asus\Documents\Embarcadero\Studio\Projects\projetin\DTO\interfaces\IDTOCliente.pas=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Unit4.pas</Transaction>
+    <Transaction>2022/08/28 20:20:26.000.540,=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Unit4.pas</Transaction>
+    <Transaction>2022/08/28 20:21:46.000.380,C:\Users\Asus\Documents\Embarcadero\Studio\Projects\projetin\DTO\classes\TDTOCliente.pas=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Unit4.pas</Transaction>
+    <Transaction>2022/08/28 20:30:47.000.356,=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Unit4.pas</Transaction>
+    <Transaction>2022/08/28 20:31:06.000.711,C:\Users\Asus\Documents\Embarcadero\Studio\Projects\projetin\controller\classes\TControllerCliente.pas=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Unit4.pas</Transaction>
+    <Transaction>2022/08/28 20:33:17.000.478,=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Unit4.pas</Transaction>
+    <Transaction>2022/08/28 20:34:18.000.508,C:\Users\Asus\Documents\Embarcadero\Studio\Projects\projetin\model\interface\IModelCliente.pas=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Unit4.pas</Transaction>
+    <Transaction>2022/08/28 20:34:27.000.742,=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Unit4.pas</Transaction>
+    <Transaction>2022/08/28 20:39:42.000.097,C:\Users\Asus\Documents\Embarcadero\Studio\Projects\projetin\model\classes\TModelCliente.pas=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Unit4.pas</Transaction>
+    <Transaction>2022/08/28 20:50:43.000.808,C:\Users\Asus\Documents\Embarcadero\Studio\Projects\projetin\Project1.dproj=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2022/08/29 00:45:22.000.142,=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\projetin\Unit1.pas</Transaction>
+    <Transaction>2022/08/29 00:45:44.000.093,C:\Users\Asus\Documents\Embarcadero\Studio\Projects\projetin\Unit1.dfm=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\projetin\datamodule\classes\DataModuleCliente.dfm</Transaction>
+    <Transaction>2022/08/29 00:45:44.000.093,C:\Users\Asus\Documents\Embarcadero\Studio\Projects\projetin\Unit1.pas=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\projetin\datamodule\classes\DataModuleCliente.pas</Transaction>
+    <Transaction>2022/08/29 21:39:53.000.129,=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\projetin\Unit1.pas</Transaction>
+    <Transaction>2022/08/29 21:40:34.000.730,C:\Users\Asus\Documents\Embarcadero\Studio\Projects\projetin\Unit1.pas=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\projetin\factory\interfaces\IClientesFactory.pas</Transaction>
+    <Transaction>2022/08/29 21:40:42.000.162,=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\projetin\Unit1.pas</Transaction>
+    <Transaction>2022/08/29 21:41:40.000.222,C:\Users\Asus\Documents\Embarcadero\Studio\Projects\projetin\Unit1.pas=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\projetin\factory\classes\TClienteFactory.pas</Transaction>
+    <Transaction>2022/08/29 21:48:23.000.239,=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\projetin\Unit1.pas</Transaction>
+    <Transaction>2022/08/29 21:53:12.000.918,=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\projetin\Unit2.pas</Transaction>
+    <Transaction>2022/08/29 21:54:57.000.215,C:\Users\Asus\Documents\Embarcadero\Studio\Projects\projetin\Unit1.pas=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\projetin\factory\classes\TClienteCasado.pas</Transaction>
+    <Transaction>2022/08/29 21:55:17.000.273,=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\projetin\Unit1.pas</Transaction>
+    <Transaction>2022/08/29 22:03:37.000.060,=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\projetin\Unit1.pas</Transaction>
+    <Transaction>2022/08/29 22:05:10.000.587,C:\Users\Asus\Documents\Embarcadero\Studio\Projects\projetin\Unit1.pas=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\projetin\factory\classes\TClienteSolteiro.pas</Transaction>
+    <Transaction>2022/08/29 22:09:27.000.808,=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\projetin\Unit1.pas</Transaction>
+    <Transaction>2022/08/29 22:09:48.000.299,C:\Users\Asus\Documents\Embarcadero\Studio\Projects\projetin\Unit1.pas=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\projetin\factory\classes\TClientesSeparados.pas</Transaction>
+    <Transaction>2022/08/29 22:11:40.000.845,=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\projetin\Unit1.pas</Transaction>
+    <Transaction>2022/08/29 22:12:57.000.075,C:\Users\Asus\Documents\Embarcadero\Studio\Projects\projetin\Unit1.pas=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\projetin\enum\enum cliente\TEnumCliente.pas</Transaction>
+    <Transaction>2022/08/29 22:39:09.000.074,C:\Users\Asus\Documents\Embarcadero\Studio\Projects\projetin\Project1.dproj=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\projetin\ProjetoPOO.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

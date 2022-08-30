@@ -1,0 +1,22 @@
+unit TClienteFactory;
+
+interface
+uses
+ IClientesFactory;
+type
+  TClientesFactory = class(TInterfacedObject, IClienteFactory)
+    private
+      function RetornarCaptionLabel: String;
+    public
+  end;
+
+implementation
+
+{ TClientesFactory }
+
+function TClientesFactory.RetornarCaptionLabel: String;
+begin
+
+end;
+
+end.

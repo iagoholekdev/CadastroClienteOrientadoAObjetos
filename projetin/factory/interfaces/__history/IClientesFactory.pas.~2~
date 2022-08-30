@@ -1,0 +1,12 @@
+unit IClientesFactory;
+
+interface
+type
+  IClienteFactory = interface
+    ['{338AB58B-8204-4834-BFEB-43A4E3189C3D}']
+    function RetornarCaptionLabel: String;
+  end;
+
+implementation
+
+end.

@@ -2,13 +2,14 @@ unit TControllerCliente;
 
 interface
 uses
- IController;
+ IController, IClientesFactory;
 type
   TControllerClientes = class(TInterfacedObject, IControllerCliente)
     private
       procedure ValidarNome(Nome: String);
       procedure ValidarCPF(CPF: String);
       procedure ValidarEndereco(Endereco: String);
+      function GetInstancia(Value: Integer): ICliInstance;
       procedure Gravar;
     public
       class function New: IControllerCliente;
@@ -18,7 +19,11 @@ type
 
 implementation
 uses
-  IModelCliente, TModelCliente;
+  IModelCliente,
+  TModelCliente,
+  TClienteFactory,
+  System.SysUtils,
+  Vcl.Dialogs;
 
 { TControllerClientes }
 
@@ -31,6 +36,11 @@ destructor TControllerClientes.Destroy;
 begin
 
   inherited;
+end;
+
+function TControllerClientes.GetInstancia(Value: Integer): ICliInstance;
+begin
+  Result := TClientesFactory.New.GetInstancia(Value);
 end;
 
 procedure TControllerClientes.Gravar;

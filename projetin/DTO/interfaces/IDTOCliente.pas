@@ -7,6 +7,8 @@ type
     function SetNome(Nome: String): IDTOClientes;
     function SetCPF(CPF: String): IDTOClientes;
     function SetEndereco(Endereco: String): IDTOClientes;
+    function SetEstadoCivil(EstadoCivil: Integer): IDTOClientes;
+    function GetEstadoCivil: Integer;
     function GetNome: String;
     function GetCPF: String;
     function GetEndereco: String;

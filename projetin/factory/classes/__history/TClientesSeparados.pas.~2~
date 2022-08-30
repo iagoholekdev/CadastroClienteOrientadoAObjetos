@@ -1,0 +1,16 @@
+unit TClientesSeparados;
+
+interface
+uses
+ IClientesFactory;
+type
+  TClienteSeparado = class(TInterfacedObject, ICliInstance)
+   private
+   public
+    function RetornaStringLabel: String;
+    class function New: ICliInstance;
+  end;
+
+implementation
+
+end.

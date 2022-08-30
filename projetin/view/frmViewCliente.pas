@@ -19,12 +19,19 @@ type
     btnGravar: TButton;
     Memo1: TMemo;
     btnLimparMemo: TButton;
+    Label6: TLabel;
+    ComboBox1: TComboBox;
+    labelEstadoCivil: TLabel;
+    labelnomeCli: TLabel;
+    labelcpfCli: TLabel;
+    labelEnderecocli: TLabel;
     procedure btnGravarClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure labelNomeExit(Sender: TObject);
     procedure labelCPFExit(Sender: TObject);
     procedure labelEnderecoExit(Sender: TObject);
     procedure btnLimparMemoClick(Sender: TObject);
+    procedure ComboBox1Change(Sender: TObject);
   private
     FDTOCli: IDTOClientes;
     FcontrollerCliente: IControllerCliente;
@@ -60,7 +67,8 @@ begin
   FDTOCli
         .SetNome(labelnome.Text)
         .SetCPF(labelCpf.Text)
-        .SetEndereco(labelEndereco.Text);
+        .SetEndereco(labelEndereco.Text)
+        .SetEstadoCivil(ComboBox1.ItemIndex);
 end;
 
 procedure TForm4.LimparMemo;
@@ -71,7 +79,6 @@ end;
 
 procedure TForm4.btnGravarClick(Sender: TObject);
 begin
-  Self.AlimentarObjetoCliente;
   Self.ValidarNome;
   Self.ValidarCPF;
   Self.ValidarEndereco;
@@ -81,6 +88,21 @@ end;
 procedure TForm4.btnLimparMemoClick(Sender: TObject);
 begin
   Self.LimparMemo;
+end;
+
+procedure TForm4.ComboBox1Change(Sender: TObject);
+begin
+  try
+    labelEstadoCivil.Caption := FcontrollerCliente
+                            .GetInstancia(Combobox1.ItemIndex)
+                            .RetornaStringLabel;
+  except
+    On E:Exception do
+       begin
+       ShowMessage('Não existe classe criada no momento para o Item ' + IntToStr(Combobox1.ItemIndex));
+       Abort;
+    end;
+  end;
 end;
 
 procedure TForm4.FormCreate(Sender: TObject);
@@ -99,7 +121,11 @@ begin
   if (labelCPF.Text = EmptyStr) then
     labelCPF.Color := clRed
   else
+    begin
     labelCPF.Color := clWhite;
+    FDTOCli.SetCPF(labelCPF.Text);
+    labelcpfCli.Caption := FDTOCli.GetCpf;
+  end;
 end;
 
 procedure TForm4.labelEnderecoExit(Sender: TObject);
@@ -107,7 +133,11 @@ begin
   if (labelEndereco.Text = EmptyStr) then
     labelEndereco.Color := clRed
   else
+    begin
     labelEndereco.Color := clWhite;
+    FDTOCLi.SetEndereco(labelEndereco.Text);
+    labelEnderecocli.Caption := FDTOCli.GetEndereco;
+  end;
 end;
 
 procedure TForm4.labelNomeExit(Sender: TObject);
@@ -115,7 +145,11 @@ begin
   if (labelNome.Text = EmptyStr) then
     labelNome.Color := clRed
   else
+    begin
     labelNome.Color := clWhite;
+    FDTOCli.SetNome(labelNome.Text);
+    labelnomeCli.Caption := FDTOCli.GetNome;
+  end;
 end;
 
 procedure TForm4.ValidarCPF;

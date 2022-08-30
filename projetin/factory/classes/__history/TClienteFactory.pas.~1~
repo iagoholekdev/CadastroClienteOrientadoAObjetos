@@ -1,0 +1,14 @@
+unit TClienteFactory;
+
+interface
+uses
+ IClientesFactory;
+type
+  TClienteFactory = class(TInterfacedObject, IClienteFactory)
+    private
+    public
+  end;
+
+implementation
+
+end.
